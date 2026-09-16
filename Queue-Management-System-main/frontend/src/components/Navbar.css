@@ -1,0 +1,221 @@
+.jq-header {
+    background: #ffffff;
+    padding: 14px 0;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 900;
+}
+
+.jq-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.jq-logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.jq-logo-section svg {
+    flex-shrink: 0;
+    color: #4f46e5;
+}
+
+.jq-logo-text {
+    min-width: 0;
+}
+
+.jq-logo-text h3 {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #4f46e5;
+    margin-bottom: 2px;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.jq-logo-text span {
+    font-size: 0.7rem;
+    color: #5a5a5a;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Desktop Nav */
+.jq-nav-desktop {
+    display: flex;
+    gap: 24px;
+    margin-left: 36px;
+}
+
+.jq-nav-desktop span {
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #475569;
+    transition: color 0.2s;
+}
+
+.jq-nav-desktop span:hover {
+    color: #4f46e5;
+}
+
+.jq-nav-desktop span.active {
+    color: #4f46e5;
+    font-weight: 700;
+}
+
+.jq-header-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.jq-icon-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #475569;
+    transition: all 0.2s;
+}
+
+.jq-icon-btn:hover {
+    background: #e2e8f0;
+    color: #0f172a;
+}
+
+.btn-dash-light {
+    background: #f1f5f9;
+    color: #4f46e5;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-dash-light:hover {
+    background: #e2e8f0;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background: #ef4444;
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 700;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+/* Mobile Hamburger Button */
+.jq-hamburger-btn {
+    display: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    background: #f1f5f9;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    color: #1e293b;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.2s;
+}
+
+.jq-hamburger-btn:hover {
+    background: #e2e8f0;
+}
+
+/* Mobile Drawer */
+.jq-mobile-drawer {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .jq-nav-desktop {
+        display: none;
+    }
+
+    .btn-member-login {
+        display: none;
+    }
+
+    .jq-hamburger-btn {
+        display: flex;
+    }
+
+    .jq-mobile-drawer {
+        display: block;
+        margin-top: 14px;
+        padding-top: 14px;
+        border-top: 1px solid #e2e8f0;
+        animation: fadeIn 0.2s ease-out;
+    }
+
+    .jq-mobile-nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .jq-mobile-nav-item {
+        padding: 12px 14px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        color: #334155;
+        cursor: pointer;
+        transition: all 0.2s;
+        background: #f8fafc;
+    }
+
+    .jq-mobile-nav-item:hover,
+    .jq-mobile-nav-item.active {
+        background: #eef2ff;
+        color: #4f46e5;
+    }
+
+    .jq-mobile-logout {
+        color: #ef4444;
+        background: #fff1f2;
+    }
+
+    .jq-mobile-logout:hover {
+        background: #ffe4e6;
+        color: #dc2626;
+    }
+}
+
+@media (max-width: 480px) {
+    .jq-logo-text h3 {
+        font-size: 0.95rem;
+    }
+    .jq-logo-text span {
+        font-size: 0.65rem;
+    }
+}

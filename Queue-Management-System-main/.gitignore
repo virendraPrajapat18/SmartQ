@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Environment Variables
+.env
+backend/.env
+
+# Local MongoDB
+mongodb-macos-aarch64-7.0.6/
+mongodb-macos-arm64-7.0.6.tgz
+mongodb_data/
+mongodb.log
+backend/backend.log
+frontend/frontend.log
+
+# OS Files
+.DS_Store
+
+# Build Outputs
+frontend/dist/
+frontend/build/
